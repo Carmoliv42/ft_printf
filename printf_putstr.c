@@ -14,12 +14,14 @@
 
 int	printf_putstr(char *s)
 {
-	unsigned int	count;
+	int	count;
 	
+	if (!s)
+		return (write(1, "null", 6));
 	count = 0;
 	while (s[count])
 	{
-		printf_putchar(s[count]);
+		write(1,&s[count], 1);
 		count++;
 	}
 	return (count);
