@@ -1,10 +1,11 @@
-#include "libftprintf.h"
+#include "ft_printf.h"
 
 int	printf_hex(unsigned int num, int up_lw)
 {
 	int		count;
 	char	*base;
 
+	count = 0;
 	if (up_lw)
 		base = "0123456789ABCDEF";
 	else

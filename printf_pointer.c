@@ -1,6 +1,6 @@
-#include "libftprintf.h"
+#include "ft_printf.h"
 
-int	assist_pointer (unsigned long ptr)
+static int	assist_pointer (unsigned long ptr)
 {
     int		count;
 	char	*base;

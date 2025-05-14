@@ -1,26 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   printf_putstr.c                                    :+:      :+:    :+:   */
+/*   ft_printf.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: carmoliv <carmoliv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/05/12 21:47:20 by carmoliv          #+#    #+#             */
-/*   Updated: 2025/05/14 21:58:16 by carmoliv         ###   ########.fr       */
+/*   Created: 2025/05/12 20:43:50 by carmoliv          #+#    #+#             */
+/*   Updated: 2025/05/14 21:57:04 by carmoliv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#ifndef FT_PRINTF_H
+# define FT_PRINTF_H
+# include <stdarg.h>
+# include <unistd.h>
 
-int	printf_putstr(char *s)
-{
-	int	count;
-	
-	count = 0;
-	while (s[count])
-	{
-		write(1,&s[count], 1);
-		count++;
-	}
-	return (count);
-}
+int	ft_printf(const char *format, ...);
+int	printf_putchar(char c);
+int	printf_putstr(char *s);
+int	printf_pointer (void *ptr);
+int	printf_hex(unsigned int num, int up_lw);
+int	printf_unsigned_int(unsigned int n);
+int	printf_int (int num);
+
+#endif
