@@ -6,7 +6,7 @@
 /*   By: carmoliv <carmoliv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/12 20:43:50 by carmoliv          #+#    #+#             */
-/*   Updated: 2025/05/14 21:57:04 by carmoliv         ###   ########.fr       */
+/*   Updated: 2025/05/15 19:39:44 by carmoliv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,9 +18,9 @@
 int	ft_printf(const char *format, ...);
 int	printf_putchar(char c);
 int	printf_putstr(char *s);
-int	printf_pointer (void *ptr);
+int	printf_pointer(void *ptr);
 int	printf_hex(unsigned int num, int up_lw);
 int	printf_unsigned_int(unsigned int n);
-int	printf_int (int num);
+int	printf_int(int num);
 
 #endif
